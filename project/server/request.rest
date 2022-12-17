@@ -1,0 +1,35 @@
+POST http://localhost:3000/api/reserv
+Content-Type: application/json
+
+{
+    "name": "teste",
+    "adress": "teste",
+    "lat": 1,
+    "lon": 2,
+    "ip": 3,
+    "type": "sla"
+}
+
+
+###
+GET http://localhost:3000/api/reserv
+
+
+###
+GET http://localhost:3000/api/reserv/639cffbc3711894440259ff1
+
+###
+DELETE http://localhost:3000/api/reserv/639cffbc3711894440259ff1
+
+
+PUT http://localhost:3000/api/reserv/639cffbc3711894440259ff1
+Content-Type: application/json
+
+{
+    "name": "teste atualização",
+    "adress": "teste",
+    "lat": 1,
+    "lon": 2,
+    "ip": 3,
+    "type": "sla"
+}
